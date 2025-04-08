@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #007bff; /* Azul para botones y elementos clave */
+    --secondary-color: #f8f9fa; /* Gris claro para fondos secundarios */
+    --text-color: #333; /* Color de texto principal */
+    --light-text-color: #6c757d; /* Color de texto secundario */
+    --header-bg: #2c3e50; /* Un azul oscuro para el header */
+    --nav-bg: #34495e; /* Un azul más claro para el nav */
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--header-bg);
+    color: rgb(2, 1, 1);
+    text-align: center;
+    padding: 2em 0;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: var(--nav-bg);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.7em 1.5em;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .hero {
+    background-image: url('img/fondo\ para\ back.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro para mejor legibilidad */
+  }
+  
+  .hero * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
